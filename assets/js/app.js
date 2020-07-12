@@ -1,8 +1,5 @@
+const viewWorkBtn = document.getElementById("view-work");
 
-
-const viewWorkBtn = document.getElementById('view-work');
-
-
-viewWorkBtn.addEventListener('click', e =>{
-    e.preventDefault();
-})
+viewWorkBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+});

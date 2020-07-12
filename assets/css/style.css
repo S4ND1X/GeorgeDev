@@ -10,26 +10,25 @@ html {
 
 /* Globales */
 body {
-  font-family: 'Comfortaa', cursive;
+  font-family: "Comfortaa", cursive;
 }
-
 
 ::-webkit-scrollbar {
   display: none;
 }
 
 /* Utilidades */
-.text-h1{
+.text-h1 {
   color: whitesmoke;
   font-weight: lighter;
-  font-family: 'Comfortaa', cursive;
+  font-family: "Comfortaa", cursive;
   letter-spacing: 4px;
   line-height: 1.5;
   font-size: 10px;
 }
 
-.font-big{
-    font-size: 30px;
+.font-big {
+  font-size: 30px;
 }
 .flex {
   align-items: center;
@@ -38,13 +37,13 @@ body {
   justify-content: center;
   margin: auto auto;
 }
-.highlight{
+.highlight {
   color: #e31b6d;
   font-weight: bold;
 }
 
-.box-button{
-  border:1.5px solid white;
+.box-button {
+  border: 1.5px solid white;
   padding: 12px 20px;
   font-size: 13pt;
   transition: all ease-in 0.3s 0s;
@@ -52,18 +51,14 @@ body {
   outline: none;
 }
 
-.section{
+.section {
   width: 90%;
   margin: 0 auto;
 }
 
-.text-center{
+.text-center {
   text-align: center;
 }
-
-
-
-
 
 /* Header */
 
@@ -75,31 +70,30 @@ header {
   justify-content: center;
 }
 /* Boton view my work */
-.view-work{
+.view-work {
   margin-top: 10px;
 }
 
-.view-work:hover{
+.view-work:hover {
   background-color: #2682d9;
   border-color: #2682d9;
 }
 
-.view-work  i{
+.view-work i {
   transition: all ease-in 0.3s 0s;
 }
-.view-work:hover i{
+.view-work:hover i {
   transform: rotateZ(90deg);
 }
 
-
-.header-nav-flex nav{
+.header-nav-flex nav {
   background-color: #252930;
   height: 50px;
   display: flex;
   justify-content: center;
   padding: 20px 0;
 }
-.header-nav-flex nav a{
+.header-nav-flex nav a {
   margin-right: 70px;
   text-decoration: none;
   color: white;
@@ -109,37 +103,13 @@ header {
   width: fit-content;
 }
 
-.header-nav-flex nav a:first-of-type{
+.header-nav-flex nav a:first-of-type {
   color: #e31b6d;
 }
 
-.header-nav-flex nav a:hover{
+.header-nav-flex nav a:hover {
   border-bottom: 1.5px solid white;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Animacion header */
 
