@@ -10,27 +10,27 @@ html {
 
 /* Globales */
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Comfortaa', cursive;
 }
 
-.text-h1{
-  color: whitesmoke;
-  font-weight: lighter;
-  font-family: "Modak", cursive;
-  letter-spacing: 6px;
-  line-height: 1.5;
-  font-size: 16px;
-}
-
-.font-big{
-    font-size: 30px;
-}
 
 ::-webkit-scrollbar {
   display: none;
 }
 
 /* Utilidades */
+.text-h1{
+  color: whitesmoke;
+  font-weight: lighter;
+  font-family: 'Comfortaa', cursive;
+  letter-spacing: 4px;
+  line-height: 1.5;
+  font-size: 10px;
+}
+
+.font-big{
+    font-size: 30px;
+}
 .flex {
   align-items: center;
   display: flex;
@@ -38,6 +38,29 @@ body {
   justify-content: center;
   margin: auto auto;
 }
+.highlight{
+  color: #e31b6d;
+  font-weight: bold;
+}
+
+.box-button{
+  border:1.5px solid white;
+  padding: 12px 20px;
+  font-size: 13pt;
+  transition: all ease-in 0.3s 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.section{
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+
+
 
 /* Header */
 
@@ -46,7 +69,70 @@ header {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
+/* Boton view my work */
+.view-work{
+  margin-top: 10px;
+}
+
+.view-work:hover{
+  background-color: #2682d9;
+  border-color: #2682d9;
+}
+
+.view-work  i{
+  transition: all ease-in 0.3s 0s;
+}
+.view-work:hover i{
+  transform: rotateZ(90deg);
+}
+
+
+.header-nav-flex nav{
+  background-color: #252930;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+.header-nav-flex nav a{
+  margin-right: 70px;
+  text-decoration: none;
+  color: white;
+  outline: none;
+  padding: 2px 0;
+  height: fit-content;
+  width: fit-content;
+}
+
+.header-nav-flex nav a:hover{
+  border-bottom: 1.5px solid white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Animacion header */
 
