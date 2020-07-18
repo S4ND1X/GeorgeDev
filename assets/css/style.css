@@ -123,31 +123,38 @@ header {
 
 /* About */
 
-.about{
+.about {
   padding: 2em 1em;
 }
 
-.about-container{
+.about-container {
   margin-top: 2em;
 }
 
-.qualities-container{
+@media screen and (max-width: 900px) {
+  .qualities-container {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.qualities-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.quality .quality-title{
+.quality .quality-title {
   font-weight: bold;
   padding-bottom: 1em;
 }
 
-.quality-text-container{
+.quality-text-container {
   padding: 2em 1em;
 }
 
-
-.quality{
+.quality {
   display: flex;
   justify-content: center;
   align-items: center;
