@@ -8,6 +8,12 @@ html {
   box-sizing: inherit;
 }
 
+/* Variables */
+
+:root {
+  --main-pink: #e31b6d;
+}
+
 /* Globales */
 body {
   font-family: "Comfortaa", cursive;
@@ -17,6 +23,10 @@ body {
   display: none;
 }
 
+h1 {
+  font-weight: lighter;
+}
+
 /* Utilidades */
 .text-h1 {
   color: whitesmoke;
@@ -24,7 +34,7 @@ body {
   font-family: "Comfortaa", cursive;
   letter-spacing: 4px;
   line-height: 1.5;
-  font-size: 10px;
+  font-size: 50px;
 }
 
 .font-big {
@@ -38,7 +48,7 @@ body {
   margin: auto auto;
 }
 .highlight {
-  color: #e31b6d;
+  color: var(--main-pink);
   font-weight: bold;
 }
 
@@ -104,11 +114,72 @@ header {
 }
 
 .header-nav-flex nav a:first-of-type {
-  color: #e31b6d;
+  color: var(--main-pink);
 }
 
 .header-nav-flex nav a:hover {
   border-bottom: 1.5px solid white;
+}
+
+/* About */
+
+.about{
+  padding: 2em 1em;
+}
+
+.about-container{
+  margin-top: 2em;
+}
+
+.qualities-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.quality .quality-title{
+  font-weight: bold;
+  padding-bottom: 1em;
+}
+
+.quality-text-container{
+  padding: 2em 1em;
+}
+
+
+.quality{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hexagon {
+  position: relative;
+  width: 150px;
+  height: 86.6px;
+  background-color: var(--main-pink);
+  margin: 43.3px 0;
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 75px solid transparent;
+  border-right: 75px solid transparent;
+}
+
+.hexagon:before {
+  bottom: 100%;
+  border-bottom: 43.3px solid var(--main-pink);
+}
+
+.hexagon:after {
+  top: 100%;
+  width: 0;
+  border-top: 43.3px solid var(--main-pink);
 }
 
 /* Animacion header */
