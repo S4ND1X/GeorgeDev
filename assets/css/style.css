@@ -26,6 +26,10 @@ body {
 h1 {
   font-weight: lighter;
 }
+h2 {
+  font-size: 2.75em;
+  font-weight: bolder;
+}
 
 /* Utilidades */
 .text-h1 {
@@ -124,11 +128,11 @@ header {
 /* About */
 
 .about {
-  padding: 2em 1em;
+  padding: 2em 0em;
 }
 
-.about-container {
-  margin-top: 2em;
+.about-title {
+  margin-bottom: 2em;
 }
 
 @media screen and (max-width: 900px) {
@@ -138,7 +142,6 @@ header {
     align-items: center;
   }
 }
-
 .qualities-container {
   display: flex;
   justify-content: space-between;
@@ -159,34 +162,7 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-
-.hexagon {
-  position: relative;
-  width: 150px;
-  height: 86.6px;
-  background-color: var(--main-pink);
-  margin: 43.3px 0;
-}
-
-.hexagon:before,
-.hexagon:after {
-  content: "";
-  position: absolute;
-  width: 0;
-  border-left: 75px solid transparent;
-  border-right: 75px solid transparent;
-}
-
-.hexagon:before {
-  bottom: 100%;
-  border-bottom: 43.3px solid var(--main-pink);
-}
-
-.hexagon:after {
-  top: 100%;
-  width: 0;
-  border-top: 43.3px solid var(--main-pink);
+  padding: 0em 0.8em;
 }
 
 /* Animacion header */
