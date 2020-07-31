@@ -80,7 +80,8 @@ h2 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 0em 0.8em;
+  padding: 1em;
+  width: 100%;
 }
 
 .card-title {
@@ -169,7 +170,7 @@ header {
 /* Awards/Contests */
 
 .awards {
-  background: linear-gradient(rgb(220, 255, 255) 0%, azure 100%);
+  background: linear-gradient(#beecf3 50% , azure 100%);
 }
 
 .awards-container {
@@ -179,32 +180,37 @@ header {
   align-items: center;
 }
 .awards-container .card-container {
-  flex-basis: 25%;
+  flex-basis: calc(25% - 1em);
+  border-radius: 10px;
+  box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.157);
+  min-height: 400px;
+  margin-bottom: 1em;
+}
+.awards-container .card-container .card-text-container {
+  font-weight: lighter;
+  line-height: 1.7em;
 }
 
-
-.portafolio-container{
+.portafolio-container {
   margin: 0 auto;
 }
 
-.work-showcase{
+.work-showcase {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 5em 2em;
 }
-.work-showcase .content-container{
+.work-showcase .content-container {
   padding-left: 5em;
   text-align: left;
 }
-.work-showcase .content-container h2{
+.work-showcase .content-container h2 {
   font-size: 2em;
 }
-.work-showcase .content-container p{
+.work-showcase .content-container p {
   font-size: 0.9em;
 }
-
-
 
 /* prueba boton */
 button {
@@ -232,7 +238,7 @@ button.learn-more .circle {
   margin: 0;
   width: 3rem;
   height: 3rem;
-  background: #ACB7D0;
+  background: #acb7d0;
   border-radius: 1.625rem;
 }
 button.learn-more .circle .icon {
@@ -254,7 +260,7 @@ button.learn-more .circle .icon.arrow {
 }
 button.learn-more .circle .icon.arrow::before {
   position: absolute;
-  content: '';
+  content: "";
   top: -0.25rem;
   right: 0.0625rem;
   width: 0.625rem;
@@ -262,7 +268,7 @@ button.learn-more .circle .icon.arrow::before {
   border-top: 0.125rem solid #fff;
   border-right: 0.125rem solid #fff;
   -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 button.learn-more .button-text {
   -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
@@ -286,13 +292,11 @@ button:hover .circle {
 button:hover .circle .icon.arrow {
   background: #fff;
   -webkit-transform: translate(1rem, 0);
-          transform: translate(1rem, 0);
+  transform: translate(1rem, 0);
 }
 button:hover .button-text {
   color: #fff;
 }
-
-
 
 /* Animacion header */
 .particle {
