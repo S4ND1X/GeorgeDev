@@ -12,4 +12,4 @@ It's not my first time working with React or Web Development in general but when
 
 ## Reach out
 
-Feel free to contact me, about this or any other poject.
+Feel free to contact me, about this or any other project.
