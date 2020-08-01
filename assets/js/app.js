@@ -8,10 +8,34 @@ const messageForm = document.getElementById("message");
 
 const submitForm = document.getElementById("send-email-form");
 
+const rickPorta = document.getElementById("rickandmorty");
+
+const developerQuotesPorta = document.getElementById("developerquotes");
+const theWavePorta = document.getElementById("thewave");
+const meetingPorta = document.getElementById("meeting");
+
+rickPorta.addEventListener("click", (e) => {
+  e.preventDefault();
+  window.open("https://github.com/S4ND1X/RickAndMortyJS");
+});
+developerQuotesPorta.addEventListener("click", (e) => {
+  e.preventDefault();
+  window.open("https://developer-quotes.netlify.app/");
+});
+theWavePorta.addEventListener("click", (e) => {
+  e.preventDefault();
+  window.open("https://github.com/S4ND1X/UnityProjects3D-TheWave");
+});
+meetingPorta.addEventListener("click", (e) => {
+  e.preventDefault();
+  window.open("https://meeting-creator.netlify.app/");
+});
+
 viewWorkBtn.addEventListener("click", (e) => {
   e.preventDefault();
 
   portafolio.scrollIntoView();
+  window.open("https://www.facebook.com/");
 });
 
 submitForm.addEventListener("submit", (e) => {
