@@ -102,6 +102,13 @@ h2 {
 .section-title {
   margin-bottom: 2em;
 }
+
+@media screen and (max-width: 600px) {
+  .section-title {
+    margin: 1em 0;
+  }
+}
+
 /* Header */
 
 header {
@@ -132,8 +139,8 @@ header {
   background-color: #252930;
   height: 50px;
   display: flex;
-  justify-content: center;
-  padding: 20px 0;
+  justify-content: space-between;
+  padding: 1em 2em;
 }
 .header-nav-flex nav a {
   margin-right: 70px;
@@ -144,6 +151,9 @@ header {
   height: fit-content;
   width: fit-content;
 }
+.header-nav-flex nav a:last-of-type {
+  margin-right: 0;
+}
 
 .header-nav-flex nav a:first-of-type {
   color: var(--main-pink);
@@ -153,7 +163,7 @@ header {
   border-bottom: 1.5px solid white;
 }
 
-/* Top Skills */
+/** Top Skills **/
 .qualities-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -167,9 +177,31 @@ header {
   .qualities-container .card-container:last-of-type {
     grid-column: 1/-1;
   }
-}
+} /*? Medium Devices Top Skills */
 
-/* Distinctions */
+@media screen and (max-width: 768px) {
+  .qualities-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+  }
+  .qualities-container .card-container:last-of-type {
+    grid-column: span 1;
+  }
+} /*? Small Devices Top Skills */
+
+@media screen and (max-width: 540px) {
+  .qualities-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .qualities-container .card-container {
+    padding: 0;
+  }
+  .qualities-container .card-container .card-title {
+    font-size: 1.3em;
+  }
+} /*? Small Devices (Smartphones) Top Skills */
+
+/** Distinctions **/
 
 .awards {
   background: linear-gradient(
@@ -196,7 +228,24 @@ header {
   .awards-container {
     grid-template-columns: repeat(3, 1fr);
   }
-}
+} /*? Medium Devices Distinctions */
+
+@media screen and (max-width: 768px) {
+  .awards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .awards-container .card-container:last-of-type {
+    grid-column: 1/-1;
+  }
+} /*? Small Devices Distinctions */
+
+@media screen and (max-width: 540px) {
+  .awards-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+} /*? Small Devices (Smartphones) Distinctions */
+
+/**  Portafolio **/
 
 .work-showcase {
   display: grid;
@@ -233,7 +282,6 @@ header {
 
 @media screen and (max-width: 992px) {
   .work-showcase {
-    display: grid;
     padding: 3em 1em;
   }
   .work-showcase img {
@@ -245,7 +293,42 @@ header {
   .work-showcase .content-container p {
     font-size: 1em;
   }
-}
+} /*? Medium Devices Portafolio */
+
+@media screen and (max-width: 768px) {
+  .work-showcase .content-container {
+    padding-left: 2em;
+  }
+  .work-showcase .content-container p {
+    font-size: 0.9em;
+  }
+} /*? Small Devices Distinctions */
+
+@media screen and (max-width: 600px) {
+  .portafolio h2 {
+    margin: 0;
+  }
+
+  .work-showcase {
+    padding: 2em 1em;
+  }
+  .work-showcase .image-container {
+    grid-column: 1/-1;
+  }
+  .work-showcase .content-container {
+    grid-column: 1/-1;
+    justify-content: center;
+    align-items: center;
+  }
+  .work-showcase .content-container h2 {
+    padding: 0;
+    margin-top: 1.75rem;
+    margin-bottom: 0;
+  }
+  .work-showcase .content-container p {
+    font-size: 1em;
+  }
+} /*? Small Devices (Smartphones) Portafolio */
 
 .contact {
   padding: 2em 4em;
