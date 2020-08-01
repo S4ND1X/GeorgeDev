@@ -37,14 +37,14 @@ viewWorkBtn.addEventListener("click", (e) => {
   portafolio.scrollIntoView();
 });
 
-submitForm.addEventListener("submit", (e) => {
-  e.preventDefault();
+// submitForm.addEventListener("submit", (e) => {
+//   e.preventDefault();
 
-  let nameStr = nameForm.value.trim();
-  let subjectStr = subjectForm.value.trim();
-  let messageStr = messageForm.value.trim();
+//   let nameStr = nameForm.value.trim();
+//   let subjectStr = subjectForm.value.trim();
+//   let messageStr = messageForm.value.trim();
 
-  if (nameStr !== "" && subjectStr !== "" && messageStr !== "") {
-    alert("Message Delivered");
-  }
+//   if (nameStr !== "" && subjectStr !== "" && messageStr !== "") {
+//     alert("Message Delivered");
+//   }
 });
