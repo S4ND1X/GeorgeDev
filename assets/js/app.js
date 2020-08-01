@@ -35,7 +35,6 @@ viewWorkBtn.addEventListener("click", (e) => {
   e.preventDefault();
 
   portafolio.scrollIntoView();
-  window.open("https://www.facebook.com/");
 });
 
 submitForm.addEventListener("submit", (e) => {
