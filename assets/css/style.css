@@ -153,27 +153,23 @@ header {
   border-bottom: 1.5px solid white;
 }
 
-/* About */
-
-.about,
-.awards .section {
-  padding: 2em 0em;
+/* Top Skills */
+.qualities-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2em;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 992px) {
   .qualities-container {
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .qualities-container .card-container:last-of-type {
+    grid-column: 1/-1;
   }
 }
-.qualities-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
-/* Awards/Contests */
+/* Distinctions */
 
 .awards {
   background: linear-gradient(
@@ -183,25 +179,23 @@ header {
 }
 
 .awards-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2em;
 }
 .awards-container .card-container {
-  flex-basis: calc(25% - 1em);
   border-radius: 10px;
   box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.157);
-  min-height: 400px;
-  margin-bottom: 1em;
+  flex-shrink: 3;
 }
 .awards-container .card-container .card-text-container {
   font-weight: lighter;
   line-height: 1.7em;
 }
-
-.portafolio-container {
-  margin: 0 auto;
+@media screen and (max-width: 992px) {
+  .awards-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .work-showcase {
@@ -235,6 +229,22 @@ header {
 }
 .work-showcase .content-container p {
   font-size: 0.9em;
+}
+
+@media screen and (max-width: 992px) {
+  .work-showcase {
+    display: grid;
+    padding: 3em 1em;
+  }
+  .work-showcase img {
+    width: 100%;
+  }
+  .work-showcase .content-container h2 {
+    font-size: 1.5em;
+  }
+  .work-showcase .content-container p {
+    font-size: 1em;
+  }
 }
 
 .contact {
