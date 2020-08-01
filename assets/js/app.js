@@ -45,11 +45,6 @@ submitForm.addEventListener("submit", (e) => {
   let messageStr = messageForm.value.trim();
 
   if (nameStr !== "" && subjectStr !== "" && messageStr !== "") {
-    sendEmail(nameStr, subjectStr, messageStr);
+    alert("Message Delivered");
   }
 });
-
-function sendEmail() {
-  submitForm.reset();
-  alert("Message Delivered");
-}
