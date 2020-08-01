@@ -275,7 +275,6 @@ header {
 }
 .work-showcase .content-container {
   grid-column: span 2;
-  padding-left: 5em;
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -283,9 +282,12 @@ header {
 }
 .work-showcase .content-container h2 {
   font-size: 2em;
+  margin: 0;
+  flex-basis: calc(33.33% - 1em);
 }
 .work-showcase .content-container p {
-  font-size: 0.9em;
+  font-size: 1;
+  flex-basis: calc(33.33% - 1em);
 }
 
 @media screen and (max-width: 992px) {
@@ -294,6 +296,9 @@ header {
   }
   .work-showcase img {
     width: 100%;
+  }
+  .work-showcase .content-container {
+    padding-left: 2em;
   }
   .work-showcase .content-container h2 {
     font-size: 1.5em;
