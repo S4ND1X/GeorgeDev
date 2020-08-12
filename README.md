@@ -1,6 +1,6 @@
 # Welcome To George Dev
 
-Hi! I'm **Jorge Sanchez**. Currently studying Computer Science at **Instituto Tecnológico y de Estudios Superiores de Monterrey** (ITESM).  In this repository I'll be uploading everything related to my personal website, where I'll be hosting all of my personal and work projects.
+Hi! I'm **Jorge Sanchez**. Currently studying Computer Science at **Instituto Tecnológico y de Estudios Superiores de Monterrey** (ITESM).  On this repository I'll be uploading everything related to my personal website, where I'll be hosting all of my personal and work projects.
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/dd69069e-2e22-4114-a7fd-3e83cc6fa2b9/deploy-status)](https://george-dev.netlify.app/)
 
