@@ -12,7 +12,7 @@ const rickPorta = document.getElementById("rickandmorty");
 
 const developerQuotesPorta = document.getElementById("developerquotes");
 const theWavePorta = document.getElementById("thewave");
-const meetingPorta = document.getElementById("meeting");
+const caPorta = document.getElementById("ca");
 
 rickPorta.addEventListener("click", (e) => {
   e.preventDefault();
@@ -26,9 +26,9 @@ theWavePorta.addEventListener("click", (e) => {
   e.preventDefault();
   window.open("https://github.com/S4ND1X/UnityProjects3D-TheWave");
 });
-meetingPorta.addEventListener("click", (e) => {
+caPorta.addEventListener("click", (e) => {
   e.preventDefault();
-  window.open("https://meeting-creator.netlify.app/");
+  window.open("https://github.com/S4ND1X/ClubAlgoritmiaBackend");
 });
 
 viewWorkBtn.addEventListener("click", (e) => {
