@@ -28,7 +28,7 @@ theWavePorta.addEventListener("click", (e) => {
 });
 caPorta.addEventListener("click", (e) => {
   e.preventDefault();
-  window.open("https://github.com/S4ND1X/ClubAlgoritmiaBackend");
+  window.open("https://github.com/S4ND1X/AlgorithmicClubGDAFullstack");
 });
 
 viewWorkBtn.addEventListener("click", (e) => {
