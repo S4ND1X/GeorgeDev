@@ -6,7 +6,7 @@ export const projects = [
     image: "/images/1.png",
     tags: ["React", "Flask", "AWS EC2", "Nginx", "cAdvisor", "Mongo DB"],
     source: "https://github.com/MLH-Fellowship/spotify-web-app",
-    visit: "https://google.com",
+    visit: "#",
     id: 0,
   },
   {
@@ -16,7 +16,7 @@ export const projects = [
     image: "/images/2.png",
     tags: ["React", "Chart.js", "Octoki.js", "React Toastify"],
     source: "https://github.com/S4ND1X/OpenSourceRanker",
-    visit: "https://google.com",
+    visit: "https://opensourceranker.netlify.app/",
     id: 1,
   },
 ];
