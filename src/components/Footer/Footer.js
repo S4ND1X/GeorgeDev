@@ -18,16 +18,13 @@ const Footer = () => {
       </LinkList>
       <SocialContainer>
         <CompanyContainer>
-          <Slogan> &copy; 2020 Georges Sanchez</Slogan>
+          <Slogan> &copy; 2021 Jorge Sanchez</Slogan>
         </CompanyContainer>
-        <SocialIcons href="">
+        <SocialIcons href="https://github.com/S4ND1X">
           <AiFillGithub size="3rem" />
         </SocialIcons>
-        <SocialIcons href="">
+        <SocialIcons href="https://www.linkedin.com/in/jorgesanchezdiaz/">
           <AiFillLinkedin size="3rem" />
-        </SocialIcons>
-        <SocialIcons href="">
-          <AiFillInstagram size="3rem" />
         </SocialIcons>
       </SocialContainer>
     </FooterWrapper>
